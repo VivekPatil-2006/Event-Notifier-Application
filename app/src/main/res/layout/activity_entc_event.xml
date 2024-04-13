@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Entc_Event">
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="176dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chess_event" />
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="183dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView47"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coding_event" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="182dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView47"
+        app:srcCompat="@drawable/circuit_designevent" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="176dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView49"
+        app:layout_constraintTop_toBottomOf="@+id/imageView48"
+        app:srcCompat="@drawable/dance_event" />
+</androidx.constraintlayout.widget.ConstraintLayout>

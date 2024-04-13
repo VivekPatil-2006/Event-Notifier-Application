@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Coordinator_security"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="231dp"
+        android:layout_height="148dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/password_img"
+        android:layout_marginTop="16dp"/>
+
+
+    <TextView
+        android:id="@+id/textresendotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Password"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+    <LinearLayout
+        android:id="@+id/otpEditTextContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textresendotp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@drawable/border"
+            />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@drawable/border"
+            />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@drawable/border"
+            />
+
+        <EditText
+            android:id="@+id/editTextText6"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@drawable/border"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textresendotp"
+        android:layout_marginTop="16dp">
+
+        <ProgressBar
+            android:id="@+id/progressbar_verify_otp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="253dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/otpEditTextContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Enter"
+        android:textStyle="bold" />
+</RelativeLayout>

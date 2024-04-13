@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".events">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="182dp"
+            android:layout_height="172dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="76dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/car_event" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="175dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="76dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chess_event" />
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="177dp"
+            android:layout_height="169dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView8"
+            app:layout_constraintHorizontal_bias="0.362"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:srcCompat="@drawable/coding_event" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="172dp"
+            android:layout_height="165dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            app:layout_constraintVertical_bias="0.035"
+            app:srcCompat="@drawable/debate_event" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="174dp"
+            android:layout_height="179dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:layout_constraintVertical_bias="0.043"
+            app:srcCompat="@drawable/gaming_event" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="174dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.785"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            app:srcCompat="@drawable/model_event" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="167dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:srcCompat="@drawable/rangoli_event"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="177dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView16"
+            app:layout_constraintHorizontal_bias="0.213"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/circuit_designevent" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="174dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17"
+            app:srcCompat="@drawable/drama_event" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="174dp"
+            android:layout_height="181dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.725"
+            app:layout_constraintStart_toEndOf="@+id/imageView24"
+            app:layout_constraintTop_toBottomOf="@+id/imageView16"
+            app:srcCompat="@drawable/spelling_bee_event" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="173dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView24"
+            app:srcCompat="@drawable/robotics_event" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="173dp"
+            android:layout_height="186dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.773"
+            app:layout_constraintStart_toEndOf="@+id/imageView26"
+            app:layout_constraintTop_toBottomOf="@+id/imageView25"
+            app:srcCompat="@drawable/maths_event" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="183dp"
+            android:layout_height="178dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView26"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/dance_event" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="183dp"
+            android:layout_height="183dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.696"
+            app:layout_constraintStart_toEndOf="@+id/imageView28"
+            app:layout_constraintTop_toBottomOf="@+id/imageView27"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/painting_event" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

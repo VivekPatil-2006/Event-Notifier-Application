@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="354dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        android:hint="Enter Your Email"
+        android:padding="18dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="355dp"
+        android:layout_height="84dp"
+        android:layout_below="@+id/login_email"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="26dp"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:padding="18dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="254dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/login_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="74dp"
+        android:padding="18dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/logintosignup"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.3"
+        android:text="New User ? Click Here !"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="203dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/login_img" />
+
+</RelativeLayout>
