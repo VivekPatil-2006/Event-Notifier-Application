@@ -1,4 +1,4 @@
-# ChattingApp
+# Event Notifier Application
 
 
 
@@ -8,7 +8,7 @@
 
 
 <p> 
-This is a sample social chatting app which has exciting feature of 1-1 as well group chatting.We can do text messaging, Image messaging,emojis sharing with friends. We can also create groups in this app with unlimted members and also set,remove status.Phone Number authication is also a woderful feature of this app.    
+The Event Notifier Application is a dynamic and user-centric platform, designed to transform event management within educational institutions, comprising three distinct sections: Guest, Organizer, and Student, each tailored to specific roles and needs.The Organizer Section helps event organizers by Sending event Notification.The Student Section offers students a user-friendly platform to access information on upcoming college events and reminders to keep them informed and engaged. Guest Login in this section allows external users to gain insights into the types and frequency of college events.    
 </p>
 
 
@@ -22,6 +22,10 @@ Major Features of this app are :-
   <ul style="list-style-type:circle;">
     
   <li>Splash Screen</li>
+  <li>Sending Event</li>
+  <li>Sending Pamplate</li>
+  <li>Receiving Notice</li>
+  <li>Receiving Image[Pamplate]</li>
   <li>Phone Authentication</li>
   <li>Set Profile Picture</li>
   <li>Set Profile Name</li>
@@ -30,9 +34,6 @@ Major Features of this app are :-
   <li>Creating Groups</li>
   <li>Group Text Messaging</li>
   <li>Group Image Messaging</li>
-  <li>Sending Emoji's </li>
-  <li>Set Status</li>
-  <li>Remove Status</li>
   <li>Update Profile Picture</li>
   <li>Update Profile Name</li>
   <li>Clear Chat</li>
@@ -50,6 +51,7 @@ Major Features of this app are :-
 <ul  style="list-style-type:circle;">
   
 <li>Java</li>
+<li>XML</li>
 <li>Android Studio</li>
 <li>Firebase</li>  
 
