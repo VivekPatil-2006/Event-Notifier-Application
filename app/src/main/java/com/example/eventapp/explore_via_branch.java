@@ -1,12 +1,10 @@
 package com.example.eventapp;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 public class explore_via_branch extends AppCompatActivity {
 
     ImageView computerEvent, civilEvent, entcEvent, mechanicalEvent, others;

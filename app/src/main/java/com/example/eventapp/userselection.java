@@ -1,5 +1,4 @@
 package com.example.eventapp;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +6,6 @@ import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 public class userselection extends AppCompatActivity
 {
     ImageView studentlogin,coordinatorlogin,guestlogin;
@@ -33,7 +31,6 @@ public class userselection extends AppCompatActivity
         {
             @Override public void onClick(View view)
             {
-                //Intent intent = new Intent(userselection.this,phone_signup_activity.class);
                 Intent intent = new Intent(userselection.this,Coordinator_security.class);
                 startActivity(intent);
             } });

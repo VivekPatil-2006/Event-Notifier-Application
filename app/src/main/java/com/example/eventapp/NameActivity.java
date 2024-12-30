@@ -127,10 +127,6 @@ public class NameActivity extends AppCompatActivity {
                             finishAffinity();
                         }
                     });
-
-
-
-
                 }
 
             }}

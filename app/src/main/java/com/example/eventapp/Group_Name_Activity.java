@@ -1,5 +1,4 @@
 package com.example.eventapp;
-
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
@@ -28,7 +27,6 @@ import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
 import java.util.Date;
-
 public class Group_Name_Activity extends AppCompatActivity {
     ActivityGroupNameBinding binding;
     FirebaseDatabase database;

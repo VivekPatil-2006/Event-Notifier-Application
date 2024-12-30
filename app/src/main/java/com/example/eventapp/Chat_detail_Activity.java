@@ -179,12 +179,6 @@ public class Chat_detail_Activity extends AppCompatActivity  {
             }
         });
 
-
-
-
-
-
-
     }
 
     private void showPopupMenuMeth(View view) {
@@ -197,11 +191,7 @@ public class Chat_detail_Activity extends AppCompatActivity  {
                     DatabaseReference databaseReference=FirebaseDatabase.getInstance().getReference("Chats").child(senderRoom);
                     databaseReference.removeValue();
                     chatMessageRecyclesAdapter.notifyDataSetChanged();
-
-
                     }
-
-
                 return true;
             }
         });
@@ -216,8 +206,6 @@ public class Chat_detail_Activity extends AppCompatActivity  {
             public void onClick(View view) {
                 startActivity(new Intent(Chat_detail_Activity.this, MainActivity.class));
                 finishAffinity();
-
-
             }
         });
         binding.backArrowChatDetailImgDeleteToolbar.setOnClickListener(new View.OnClickListener() {
@@ -225,8 +213,6 @@ public class Chat_detail_Activity extends AppCompatActivity  {
             public void onClick(View view) {
                 startActivity(new Intent(Chat_detail_Activity.this, MainActivity.class));
                 finishAffinity();
-
-
             }
         });
 
@@ -350,10 +336,7 @@ public class Chat_detail_Activity extends AppCompatActivity  {
             }
         });
     }
-
-
-
-    }
+}
 
 
 

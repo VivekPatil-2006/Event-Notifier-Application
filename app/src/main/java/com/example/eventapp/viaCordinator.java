@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-
 public class viaCordinator extends AppCompatActivity {
 
     ImageView b1,b2;
@@ -21,6 +20,8 @@ public class viaCordinator extends AppCompatActivity {
             @Override public void onClick(View view)
             {
                 Intent intent = new Intent(viaCordinator.this,phone_signup_activity.class);
+                //Intent intent = new Intent(viaCordinator.this,coordinatorlogin.class);
+
                 startActivity(intent);
             } });
         //////////////////////////////////////////////////////////////////////////

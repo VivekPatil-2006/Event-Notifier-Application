@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 public class Mechanical_Event extends AppCompatActivity {
     ImageView i1,i2,i3;
 

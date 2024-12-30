@@ -1,12 +1,10 @@
 package com.example.eventapp;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 public class events extends AppCompatActivity {
 
     ImageView car_event,chess_event,coding_event,debate_event,gaming_event,model_event,circuit_designevent,rangoli_event,drama_event,spelling_bee_event,robotics_event,maths_event,dance_event,painting_event;

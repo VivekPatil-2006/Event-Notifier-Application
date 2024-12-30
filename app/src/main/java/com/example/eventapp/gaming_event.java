@@ -25,7 +25,7 @@ public class gaming_event extends AppCompatActivity {
     }
 
     private void openGoogleLink() {
-        String googleLink = "https://forms.gle/fa2krRoUDdFiAExQ8";
+        String googleLink = "https://docs.google.com/forms/d/e/1FAIpQLSe3f-0418KjxD1vYXgUt5Jyxq7dwGF9-3luuD_bvIw1aBI04Q/viewform?usp=dialog";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(googleLink));
         startActivity(intent);
     }

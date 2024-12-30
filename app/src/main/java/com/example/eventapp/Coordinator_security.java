@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-
 public class Coordinator_security extends AppCompatActivity {
 
     private EditText p1, p2, p3, p4, p5, p6;

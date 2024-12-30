@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
-
 public class userloginsucess extends AppCompatActivity {
     Button Event_Notice,Event_img;
     ImageView home,Event_Enroll,feedback;

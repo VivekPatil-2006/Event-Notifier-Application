@@ -1,5 +1,4 @@
 package com.example.eventapp;
-
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -9,7 +8,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.ListResult;
 import com.google.firebase.storage.StorageReference;
-
 public class ImageActivity extends AppCompatActivity {
 
     private ImageView imageView;

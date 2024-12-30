@@ -1,9 +1,7 @@
 package com.example.eventapp;
-
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 public class demo extends AppCompatActivity {
 
     @Override

@@ -6,85 +6,76 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthProvider;
+
+import java.util.concurrent.TimeUnit;
 
 public class coordinatorlogin extends AppCompatActivity {
 
-    EditText enternumber;
-    Button getotp,camera_open;
+    EditText enterNumber;
+    Button getOtp, cameraOpen;
     ProgressBar progressBar;
     FirebaseAuth auth;
-    Button go;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coordinatorlogin);
 
-        /*
-        enternumber = findViewById(R.id.edittext);
-        getotp = findViewById(R.id.button);
+        enterNumber = findViewById(R.id.edittext);
+        getOtp = findViewById(R.id.button);
         progressBar = findViewById(R.id.progressbar_sending_otp);
         auth = FirebaseAuth.getInstance();
 
-        getotp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String phoneNumber = enternumber.getText().toString().trim();
+        getOtp.setOnClickListener(view -> {
+            String phoneNumber = enterNumber.getText().toString().trim();
 
-                if (!phoneNumber.isEmpty() && phoneNumber.length() == 10) {
-                    progressBar.setVisibility(View.VISIBLE);
-                    getotp.setVisibility(View.INVISIBLE);
+            if (phoneNumber != null && !phoneNumber.isEmpty() && phoneNumber.length() == 10) {
+                progressBar.setVisibility(View.VISIBLE);
+                getOtp.setVisibility(View.INVISIBLE);
 
-                    PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                            "+91" + phoneNumber,
-                            60, TimeUnit.SECONDS,
-                            coordinatorlogin.this,
-                            new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
-                                @Override
-                                public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
-                                    progressBar.setVisibility(View.INVISIBLE);
-                                    getotp.setVisibility(View.VISIBLE);
-                                    signInWithPhoneAuthCredential(phoneAuthCredential);
-                                }
+                PhoneAuthProvider.getInstance().verifyPhoneNumber(
+                        "+91" + phoneNumber,
+                        60, TimeUnit.SECONDS,
+                        coordinatorlogin.this,
+                        new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+                            @Override
+                            public void onVerificationCompleted(@NonNull PhoneAuthCredential credential) {
+                                progressBar.setVisibility(View.INVISIBLE);
+                                getOtp.setVisibility(View.VISIBLE);
+                                signInWithPhoneAuthCredential(credential);
+                            }
 
-                                @Override
-                                public void onVerificationFailed(@NonNull FirebaseException e) {
-                                    progressBar.setVisibility(View.INVISIBLE);
-                                    getotp.setVisibility(View.VISIBLE);
-                                    Toast.makeText(coordinatorlogin.this, "Error, please check internet connection", Toast.LENGTH_SHORT).show();
-                                }
+                            @Override
+                            public void onVerificationFailed(@NonNull FirebaseException e) {
+                                progressBar.setVisibility(View.INVISIBLE);
+                                getOtp.setVisibility(View.VISIBLE);
+                                Toast.makeText(coordinatorlogin.this, "Error, please check internet connection", Toast.LENGTH_SHORT).show();
+                            }
 
-                                @Override
-                                public void onCodeSent(@NonNull String backendotp, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
-                                    progressBar.setVisibility(View.INVISIBLE);
-                                    getotp.setVisibility(View.VISIBLE);
+                            @Override
+                            public void onCodeSent(@NonNull String backendOtp, @NonNull PhoneAuthProvider.ForceResendingToken token) {
+                                progressBar.setVisibility(View.INVISIBLE);
+                                getOtp.setVisibility(View.VISIBLE);
 
-                                    Intent intent = new Intent(coordinatorlogin.this, coordinatorloginreceived.class);
-                                    intent.putExtra("mobile", phoneNumber);
-                                    intent.putExtra("backendotp", backendotp);
-                                    startActivity(intent);
-                                }
-                            });
-                } else {
-                    Toast.makeText(coordinatorlogin.this, "Please enter a correct 10-digit number", Toast.LENGTH_SHORT).show();
-                }
+                                Intent intent = new Intent(coordinatorlogin.this, OtpVerificationActivity.class);
+                                intent.putExtra("mobile", phoneNumber);
+                                intent.putExtra("backendotp", backendOtp);
+                                startActivity(intent);
+                            }
+                        });
+            } else {
+                Toast.makeText(coordinatorlogin.this, "Please enter a correct 10-digit number", Toast.LENGTH_SHORT).show();
             }
         });
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////
-        camera_open = findViewById(R.id.button_camera);
-        camera_open.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(coordinatorlogin.this, dashboard.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
@@ -93,25 +84,10 @@ public class coordinatorlogin extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         // Verification successful, handle sign-in
                         Toast.makeText(coordinatorlogin.this, "Verification successful", Toast.LENGTH_SHORT).show();
-                        // You can add additional actions here if needed
                     } else {
                         // Verification failed, display an error message
                         Toast.makeText(coordinatorlogin.this, "Verification failed", Toast.LENGTH_SHORT).show();
                     }
                 });
-     */
-        //////////////////////////////////////////////////////////////////
-
-        go=findViewById(R.id.button_camera);
-        go.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent=new Intent(coordinatorlogin.this,MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
     }
 }

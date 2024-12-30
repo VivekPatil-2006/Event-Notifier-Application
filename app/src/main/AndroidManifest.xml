@@ -53,12 +53,7 @@
         <activity
             android:name=".Make_Call_Msg_Info"
             android:exported="false" />
-        <activity
-            android:name=".MakeMsg"
-            android:exported="false" />
-        <activity
-            android:name=".MakeCall"
-            android:exported="false" />
+
         <activity
             android:name=".SettingActity"
             android:exported="false" />

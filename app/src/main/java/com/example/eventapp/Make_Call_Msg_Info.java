@@ -1,9 +1,7 @@
 package com.example.eventapp;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
 public class Make_Call_Msg_Info extends AppCompatActivity {
 
     @Override

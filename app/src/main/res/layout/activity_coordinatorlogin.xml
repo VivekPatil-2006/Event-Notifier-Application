@@ -105,11 +105,5 @@
         android:text="Get OTP"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button_camera"
-        android:layout_width="177dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="NEXT" />
 
 </LinearLayout>

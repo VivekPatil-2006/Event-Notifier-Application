@@ -145,8 +145,6 @@ public class group_chat_detail_acctivity extends AppCompatActivity {
             }
         });
 
-
-
         ActivityResultLauncher<Intent>opengallery=registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
             @Override
             public void onActivityResult(ActivityResult result) {

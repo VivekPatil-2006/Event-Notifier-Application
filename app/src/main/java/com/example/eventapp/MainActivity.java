@@ -32,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             } });
 
-
-
         fragment_tab_setup();
         getSupportActionBar().setElevation(0);
 

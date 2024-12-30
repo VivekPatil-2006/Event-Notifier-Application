@@ -1,5 +1,4 @@
 package com.example.eventapp;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,8 +20,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-
-
 public class SelectPeopleForGroup extends AppCompatActivity {
     ActivitySelectPeopleForGroupBinding binding;
 
@@ -133,20 +130,11 @@ public class SelectPeopleForGroup extends AppCompatActivity {
 
                         }
                     });
-
                 }else{
                     Toast.makeText(SelectPeopleForGroup.this, "Please Select Participants", Toast.LENGTH_SHORT).show();
                 }
-
-
-
-
-
-
             }
         });
 
     }
-
-
 }

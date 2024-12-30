@@ -1,55 +1,56 @@
 package com.example.eventapp;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 
 import com.example.eventapp.databinding.ActivityPhoneSignupBinding;
 import com.google.firebase.auth.FirebaseAuth;
-
 public class phone_signup_activity extends AppCompatActivity {
-ActivityPhoneSignupBinding binding;
+    private ActivityPhoneSignupBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding=ActivityPhoneSignupBinding.inflate(getLayoutInflater());
+
+        // Initialize view binding
+        binding = ActivityPhoneSignupBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        //auto LogIn
-        if(FirebaseAuth.getInstance().getCurrentUser()!=null){
+        // Auto-login check
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            // User already logged in, navigate to MainActivity
             startActivity(new Intent(phone_signup_activity.this, MainActivity.class));
             finishAffinity();
+            return; // Prevent further execution
         }
 
-        //for getting keyBoard automatically
+        // Automatically focus on the phone number input field
         binding.edtPhoneNo.requestFocus();
 
-
-        //on click of continue button
+        // Handle continue button click
         binding.btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String phoneNum = binding.edtPhoneNo.getText().toString().trim();
 
-                String phone_num=binding.edtPhoneNo.getText().toString();
-                if(phone_num.length()>9){
-                    //changing Sign in activity to otp activity
-                    Intent signup_to_otp=new Intent(phone_signup_activity.this, OtpVerificationActivity.class);
-                    signup_to_otp.putExtra("phone_num",phone_num);
-                    startActivity(signup_to_otp);
-                }else{
-                    //showing error for wrong number
-                    binding.edtPhoneNo.setError("Enter Valid number");
+                if (isValidPhoneNumber(phoneNum)) {
+                    // Navigate to OTP verification activity
+                    Intent signupToOtp = new Intent(phone_signup_activity.this, OtpVerificationActivity.class);
+                    signupToOtp.putExtra("phone_num", phoneNum);
+                    startActivity(signupToOtp);
+                } else {
+                    // Show an error for invalid phone number
+                    binding.edtPhoneNo.setError("Enter a valid phone number");
                 }
-
-
             }
         });
-
     }
 
-
-
+    private boolean isValidPhoneNumber(String phoneNum) {
+        // Ensure the phone number is not empty and has at least 10 digits
+        return !TextUtils.isEmpty(phoneNum) && phoneNum.length() == 10 && phoneNum.matches("\\d+");
+    }
 }
