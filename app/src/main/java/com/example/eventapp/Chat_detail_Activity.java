@@ -348,4 +348,3 @@ public class Chat_detail_Activity extends AppCompatActivity  {
 
 
 
-

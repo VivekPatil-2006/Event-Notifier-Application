@@ -1,5 +1,4 @@
 package com.example.eventapp.Adapter;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +20,6 @@ import java.util.ArrayList;
 import omari.hamza.storyview.StoryView;
 import omari.hamza.storyview.callback.StoryClickListeners;
 import omari.hamza.storyview.model.MyStory;
-
 public class StatusAdapter extends RecyclerView.Adapter<StatusAdapter.ViewHolder> {
     Context context;
     ArrayList<UserStatusModel> userStatusModelArrayList;

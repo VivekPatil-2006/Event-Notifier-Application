@@ -22,6 +22,7 @@ public class signupscreen extends AppCompatActivity {
     Button signup_button;
     FirebaseAuth mauth;
 
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

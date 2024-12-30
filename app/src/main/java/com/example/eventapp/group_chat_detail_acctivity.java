@@ -166,6 +166,7 @@ public class group_chat_detail_acctivity extends AppCompatActivity {
 
             }
         });
+
         //link image Button
         binding.imgLinkGroupChatDeatail.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -24,6 +24,7 @@ public class loginsignupscreen extends AppCompatActivity {
                 Intent intent=new Intent(loginsignupscreen.this,loginscreen.class);
                 startActivity(intent);
             }
+
         });
         ////////////////////////////////////////////////////////////////////////////////////////////
         SIGNUP=findViewById(R.id.button3);

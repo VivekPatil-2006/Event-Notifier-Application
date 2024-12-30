@@ -191,5 +191,4 @@
             android:exported="false"
             android:theme="@style/toolbarPresent" />
     </application>
-
 </manifest>

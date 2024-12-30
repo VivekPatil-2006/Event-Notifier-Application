@@ -23,6 +23,7 @@ public class explore_via_branch extends AppCompatActivity {
             }
         });
 
+
         civilEvent = findViewById(R.id.imageView19);
         civilEvent.setOnClickListener(new View.OnClickListener() {
             @Override

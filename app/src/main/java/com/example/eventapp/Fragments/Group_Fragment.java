@@ -23,7 +23,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-
 public class Group_Fragment extends Fragment {
 
    FragmentGroupBinding binding;

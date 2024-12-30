@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.eventapp.R;
-
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link Calls_Fragment#newInstance} factory method to

@@ -1,7 +1,6 @@
 package com.example.eventapp.Model;
 
 import java.util.ArrayList;
-
 public class GroupModel {
     String groupImg,createTime,groupName,lastUpdated,groupUID;
     ArrayList<String> groupMemebersList;

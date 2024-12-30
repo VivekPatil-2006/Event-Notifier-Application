@@ -1,5 +1,4 @@
 package com.example.eventapp.Model;
-
 public class MessageModel {
     String messageUid,messageTxt,messageNodeId;
     long timestamp;

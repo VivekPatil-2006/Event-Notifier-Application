@@ -134,6 +134,7 @@ public class NameActivity extends AppCompatActivity {
 
 
     }
+
     ActivityResultLauncher<Intent> showPicture=registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
         @Override
         public void onActivityResult(ActivityResult result) {

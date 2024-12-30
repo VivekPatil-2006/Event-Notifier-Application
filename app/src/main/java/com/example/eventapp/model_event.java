@@ -29,4 +29,5 @@ public class model_event extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(googleLink));
         startActivity(intent);
     }
+
 }

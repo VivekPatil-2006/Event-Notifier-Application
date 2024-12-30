@@ -30,3 +30,4 @@ public class debate_event extends AppCompatActivity {
         startActivity(intent);
     }
 }
+

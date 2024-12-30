@@ -1,5 +1,4 @@
 package com.example.eventapp.Adapter;
-
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -16,7 +15,6 @@ import com.example.eventapp.group_chat_detail_acctivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-
 public class Group_user_Adapter extends RecyclerView.Adapter<Group_user_Adapter.ViewHoolder> {
     Context context;
     ArrayList<GroupModel>groupArrayList;

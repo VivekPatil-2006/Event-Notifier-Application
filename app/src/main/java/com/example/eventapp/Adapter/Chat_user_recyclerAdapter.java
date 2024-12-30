@@ -1,5 +1,4 @@
 package com.example.eventapp.Adapter;
-
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -16,7 +15,6 @@ import com.example.eventapp.databinding.RowsChatUserLayoutBinding;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-
 public class Chat_user_recyclerAdapter extends RecyclerView.Adapter<Chat_user_recyclerAdapter.ViewHolder> {
 
     Context context;

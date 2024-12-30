@@ -30,3 +30,4 @@ public class painting_event extends AppCompatActivity {
         startActivity(intent);
     }
 }
+

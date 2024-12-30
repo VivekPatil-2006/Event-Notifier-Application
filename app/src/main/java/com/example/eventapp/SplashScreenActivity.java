@@ -17,6 +17,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         showMainActivity();
     }
+
     private void showMainActivity() {
         // Changing screen
         new Handler().postDelayed(new Runnable() {

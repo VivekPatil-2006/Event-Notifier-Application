@@ -23,6 +23,7 @@ public class Mechanical_Event extends AppCompatActivity {
                 Intent intent=new Intent(Mechanical_Event.this,car_event.class);
                 startActivity(intent);
             }
+
         });
         //////////////////////////////////////////////////////////////////////////////////
         i2=findViewById(R.id.imageView52);

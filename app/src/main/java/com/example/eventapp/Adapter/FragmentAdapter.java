@@ -1,5 +1,4 @@
 package com.example.eventapp.Adapter;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -9,7 +8,6 @@ import com.example.eventapp.Fragments.Calls_Fragment;
 import com.example.eventapp.Fragments.Chat_Fragment;
 import com.example.eventapp.Fragments.Group_Fragment;
 import com.example.eventapp.Fragments.Status_Fragment;
-
 public class FragmentAdapter extends FragmentStateAdapter {
     public FragmentAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);

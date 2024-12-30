@@ -35,6 +35,7 @@ public class notice extends AppCompatActivity {
     private StorageReference storageReference;
     private EditText editMessage;
     private ImageView btnSelectImage, home;
+
     private Button sendNoticeButton, clearDataButton;
 
     @Override

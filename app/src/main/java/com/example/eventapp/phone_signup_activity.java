@@ -54,3 +54,4 @@ public class phone_signup_activity extends AppCompatActivity {
         return !TextUtils.isEmpty(phoneNum) && phoneNum.length() == 10 && phoneNum.matches("\\d+");
     }
 }
+

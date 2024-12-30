@@ -1,5 +1,4 @@
 package com.example.eventapp.Model;
-
 public class StatusImg {
     private String  imgUrl;
     private Long timeStamp;

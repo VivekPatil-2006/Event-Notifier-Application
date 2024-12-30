@@ -39,6 +39,7 @@ public class SettingActity extends AppCompatActivity {
     int check=0;
     Uri imgUri;
     Dialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

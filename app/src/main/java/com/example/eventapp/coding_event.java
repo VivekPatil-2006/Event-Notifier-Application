@@ -30,3 +30,4 @@ public class coding_event extends AppCompatActivity {
         startActivity(intent);
     }
 }
+

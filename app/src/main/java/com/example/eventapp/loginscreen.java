@@ -19,6 +19,7 @@ public class loginscreen extends AppCompatActivity
     EditText login_email,login_password;
     Button login_button;
     FirebaseAuth mauth;
+
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);

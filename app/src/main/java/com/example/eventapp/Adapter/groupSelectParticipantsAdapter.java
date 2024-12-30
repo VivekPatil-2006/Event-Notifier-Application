@@ -1,5 +1,4 @@
 package com.example.eventapp.Adapter;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +13,6 @@ import com.example.eventapp.databinding.RowsChatUserLayoutBinding;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-
 public class groupSelectParticipantsAdapter extends RecyclerView.Adapter<groupSelectParticipantsAdapter.ViewHolder> {
     Context context;
     ArrayList<UserProfile> UserShowList;

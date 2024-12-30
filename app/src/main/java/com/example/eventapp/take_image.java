@@ -34,6 +34,7 @@ public class take_image extends AppCompatActivity {
         retrieveLatestImage();
     }
 
+
     private void retrieveLatestImage() {
         // Assuming "images" is the path where images are stored in Firebase Storage
         StorageReference imagesRef = storageReference.child("images");

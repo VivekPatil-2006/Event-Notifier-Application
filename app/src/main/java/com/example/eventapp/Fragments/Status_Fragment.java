@@ -50,8 +50,6 @@ import java.util.HashMap;
 import omari.hamza.storyview.StoryView;
 import omari.hamza.storyview.callback.StoryClickListeners;
 import omari.hamza.storyview.model.MyStory;
-
-
 public class Status_Fragment extends Fragment {
     StatusAdapter statusAdapter;
     FragmentStatusBinding binding;

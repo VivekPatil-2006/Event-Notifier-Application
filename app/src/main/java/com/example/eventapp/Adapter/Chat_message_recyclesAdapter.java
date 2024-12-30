@@ -1,5 +1,4 @@
 package com.example.eventapp.Adapter;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +22,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-
 public class Chat_message_recyclesAdapter extends RecyclerView.Adapter {
     Context context;
     FirebaseDatabase database;

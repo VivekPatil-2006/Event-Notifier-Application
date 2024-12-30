@@ -70,3 +70,4 @@ public class receive_notice extends AppCompatActivity {
         Toast.makeText(receive_notice.this, message, Toast.LENGTH_SHORT).show();
     }
 }
+

@@ -1,7 +1,6 @@
 package com.example.eventapp.Model;
 
 import java.util.ArrayList;
-
 public class UserStatusModel {
 
     private String name,profileImage,userUid;

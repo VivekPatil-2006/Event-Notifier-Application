@@ -2,11 +2,6 @@ package com.example.eventapp.Model;
 
 public class UserProfile {
     String UID,NAME,PHONENUMBER,PROFILEIMAGE;
-
-
-
-
-
     public UserProfile(String uid, String name, String phonenumber, String profileImage) {
         this.UID = uid;
         this.NAME = name;
