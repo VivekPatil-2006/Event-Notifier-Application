@@ -11,6 +11,9 @@
 The Event Notifier Application is a dynamic and user-centric platform, designed to transform event management within educational institutions, comprising three distinct sections: Guest, Organizer, and Student, each tailored to specific roles and needs.The Organizer Section helps event organizers by Sending event Notification.The Student Section offers students a user-friendly platform to access information on upcoming college events and reminders to keep them informed and engaged. Guest Login in this section allows external users to gain insights into the types and frequency of college events.    
 </p>
 
+![image alt](https://github.com/VivekPatil-2006/Event-Notifier-Application/blob/master/1.png)
+![image alt](https://github.com/VivekPatil-2006/Event-Notifier-Application/blob/master/2.png)
+![image alt](https://github.com/VivekPatil-2006/Event-Notifier-Application/blob/master/3.png)
 
 
 <h6>Features </h6>
